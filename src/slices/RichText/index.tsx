@@ -18,7 +18,7 @@ const RichText = ({ slice }: RichTextProps): JSX.Element => {
       data-slice-variation={slice.variation}
     >
       <div className="prose prose-lg prose-slate prose-invert">
-        <PrismicRichText field={slice.primary.text} components={components} />
+        <PrismicRichText field={slice.primary.text} />
       </div>
     </Bounded>
   );
